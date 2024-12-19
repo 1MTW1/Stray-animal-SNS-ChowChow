@@ -1,0 +1,353 @@
+/* 프로필 페이지 컨테이너 기본 스타일 */
+.profile-page-container {
+    max-width: 600px;
+    margin: 1rem auto;
+    margin-top: 90px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.profile-page-container > form {
+    margin: 10px auto;
+}
+
+/* 프로필 헤더 스타일 */
+.profile-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* 파일 업로드 래퍼 스타일 */
+.file-upload-wrapper {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: dashed 2px #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    width: 95.5%;
+    height: 3rem;
+}
+
+.file-upload-content {
+    color: #888;
+    font-size: 20px;
+    margin-top: .8rem;
+}
+
+/* 입력 필드 스타일 */
+.profile-header > input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* 버튼 스타일 */
+.profile-submit {
+    width: 100%;
+    background-color: #F07489;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Dovemayo_gothic';
+}
+
+.profile-submit:hover {
+    background-color: pink;
+}
+
+.profile-page-container .error {
+    position: fixed; /* 팝업을 화면에 고정 */
+    top: 20%; /* 상단에서부터의 위치 */
+    left: 50%; /* 왼쪽에서부터의 위치 */
+    transform: translate(-50%, -50%); /* 정확한 중앙 위치 조정 */
+    z-index: 1000; /* 다른 요소들 위에 표시 */
+    background-color: rgba(0, 0, 0, 0.7); /* 반투명 검정색 배경 */
+    color: #fff; /* 텍스트 색상 */
+    padding: 20px 40px; /* 내부 여백 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    font-size: 1rem; /* 폰트 크기 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    max-width: 80%; /* 최대 너비 설정 */
+    word-wrap: break-word; /* 긴 텍스트 처리 */
+  }
+
+@media (max-width: 768px) {
+    .file-upload-content {
+        font-size: 15px;
+    }
+
+    .file-upload-wrapper {
+        width: 93%;
+    }
+    .profile-page-container .error {
+        width: 60%;
+    }
+    
+}
+@media (max-width: 400px) {
+    .profile-page-container {
+        margin: 0 auto;
+    }
+    .profile-submit {
+        font-size: .9rem;
+    }
+    .file-upload-content {
+        font-size: .9rem;
+    }
+}
+
+/* ManProfileForm */
+/* ManProfileForm */
+/* ManProfileForm */
+/* ManProfileForm */
+/* ManProfileForm */
+/* ManProfileForm */
+/* ManProfileForm */
+
+.my-space-container {
+    max-width: 600px;
+    min-width: 600px;
+    margin: 1rem auto;
+    margin-top: 90px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.my-space-container .ctrl-box{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+.my-space-container .ctrl-box button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    width: 7rem;
+}
+.my-space-container .ctrl-box .active{
+    /* 밑줄만들기 */
+    border-bottom: 2px solid #F07489;
+}
+
+.my-space-container__profile {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.my-space-container__profile-main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.my-space-container__profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.my-space-container__profile-main-info {
+    flex: 1;
+}
+
+.my-space-container__profile .nickname {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+.my-space-container__profile .username {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 10px 0;
+}
+.my-space-container .bio {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 0 15px 0;
+}
+.my-space-container .nickname-and-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.my-space-container .nickname-and-btn .nickname-and-btn__send{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.my-space-container .nickname-and-btn img{
+    height: 32px;
+    border-radius: 2rem;
+    border: solid black;
+    box-shadow: -10px 0 15px -5px rgba(0, 0, 0, 0.1),  /* 좌측 그림자 */
+    10px 0 15px -5px rgba(0, 0, 0, 0.1),   /* 우측 그림자 */
+    0 -10px 15px -5px rgba(0, 0, 0, 0.1),  /* 상단 그림자 */
+    0 5px 10px -5px rgba(0, 0, 0, 0.05); 
+    margin-top: 10px;
+    margin-left: .5rem;
+
+}
+.my-space-container .follow-btn {
+    background-color: #323C4D;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    height: 40px;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+.my-space-container .edit-profile-btn{
+    background-color: #323C4D;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    height: 20px;
+    margin-top: 8px;
+    margin-right: 5px;  
+}
+
+.my-space-container__profile-follow {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.my-space-container .follower, .following {
+    font-size: 14px;
+    text-align: center;
+}
+
+.my-space-container .follower span, .following span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .my-space-container {
+        min-width: 100%;
+    }
+}
+
+
+/* UserFollowListForm */
+/* UserFollowListForm */
+/* UserFollowListForm */
+/* UserFollowListForm */
+/* UserFollowListForm */
+/* UserFollowListForm */
+/* UserFollowListForm */
+
+.friendListForm-container > .nickname {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+/* ProfileDetailForm 동물상세정보 */
+/* ProfileDetailForm 동물상세정보 */
+/* ProfileDetailForm 동물상세정보 */
+/* ProfileDetailForm 동물상세정보 */
+/* ProfileDetailForm 동물상세정보 */
+
+.my-space-container__posts__animaldetail .bio{
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 
+        -10px 0 15px -5px rgba(0, 0, 0, 0.1),  /* 좌측 그림자 */
+        10px 0 15px -5px rgba(0, 0, 0, 0.1),   /* 우측 그림자 */
+        0 -10px 15px -5px rgba(0, 0, 0, 0.1),  /* 상단 그림자 */
+        0 5px 10px -5px rgba(0, 0, 0, 0.05);   /* 하단 그림자 (약하게) */
+    padding: 1rem;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+.my-space-container__posts__animaldetail > p{
+    margin-left: 3rem;
+    margin-bottom: 20px;
+}
+.my-space-container__posts__animaldetail > p > span{
+    border: #F07489 1px solid;
+    border-radius: 2rem;
+    padding: 3px 13px;
+    background-color: #F07489;
+    color: white;
+    margin-right: 1rem;
+}
+.my-space-container__posts__animaldetail .youtube{
+    max-width: 85%;
+    margin: 0 auto;
+    border-radius: 2rem;
+}
+.my-space-container__posts__animaldetail .video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    border-radius: .5rem;
+}
+.my-space-container__posts__animaldetail .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.my-space-container__posts__animaldetail .youtube a{
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+.my-space-container__posts__animaldetail .youtube a:hover{
+    color: #F07489;
+}

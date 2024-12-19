@@ -1,0 +1,33 @@
+FROM node:21 as builder
+
+# SSH 설정 (배포시엔 GitHub 비공개할거니까)
+RUN mkdir /root/.ssh/
+ADD ./.ssh/id_rsa /root/.ssh/id_rsa
+RUN chmod 600 /root/.ssh/id_rsa
+RUN touch /root/.ssh/known_hosts
+RUN ssh-keyscan github.com >> /root/.ssh/known_hosts
+
+WORKDIR /app
+
+# 재실행용
+RUN echo "testing:1"
+
+# GitHub에서 프로젝트 클론
+RUN git clone git@github.com:chowchow-team/develop.git
+
+WORKDIR /app/develop/frontend
+
+RUN npm cache clean --force
+
+RUN npm install
+
+RUN npm run build
+
+FROM nginx:1.19.5 as production-stage
+
+# 빌드 단계에서 생성된 빌드 파일을 Nginx 서버로 복사
+COPY --from=builder /app/mongle/frontend/build /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
