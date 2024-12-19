@@ -4,7 +4,7 @@
 ## <strong>Index</strong>
 
 1. [<strong>시연 영상</strong> 🚀](#demo-video)
-2. [<strong>서비스 소개</strong> ❗](#demo-video)
+2. [<strong>서비스 소개</strong> ❗](#intro)
 3. [<strong>팀 구성원</strong> 🔥](#team)
 4. [<strong>실행방법</strong> 💻](#how-to-start)
 5. [<strong>주요기능</strong> 🏅](#preview)
@@ -14,7 +14,7 @@
 <!--<img width="512" alt="스크린샷 2024-12-19 오후 8 54 23" src="https://github.com/user-attachments/assets/21e2143b-8e13-4335-80ee-67ca0a9c9e91" 
 style="display: block; margin: 0 auto; width: 512px;"
 />-->
-<strong>( ❗▶️ 클릭하여 시연 영상 재생)</strong>
+<strong>( ❗▶️ 아래 이미지 클릭하여 시연 영상 재생)</strong>
 [![YouTube Video](https://github.com/user-attachments/assets/f587d0c8-37df-41e3-b565-f1f1ecd7daef)](https://www.youtube.com/watch?v=xpKVc2Bf2nc)
 
 ## Intro
@@ -117,20 +117,20 @@ python manage.py crontab remove # 크론탭제거
 ```
 
 ## Preview
-0. <strong>유기동물정보API와 LLM을 통한 자동 프로필 생성</strong><br>
+<h3>0. <strong>유기동물정보API와 LLM을 통한 자동 프로필 생성</strong></h3><br>
 <img width="548" alt="스크린샷 2024-12-19 오후 10 01 58" src="https://github.com/user-attachments/assets/20fcbaa0-efcb-429b-9c8a-bb2e819e57d5" />
 <img width="548" alt="스크린샷 2024-12-19 오후 10 03 20" src="https://github.com/user-attachments/assets/07fc1e36-9dcb-4e0f-a751-42cf3c6de9fe" />
 
-1. <strong>LLM을 통한 자동 포스팅</strong><br>
+<h3>1. <strong>LLM을 통한 자동 포스팅</strong></h3><br>
 <img width="548" alt="스크린샷 2024-12-19 오후 9 15 42" src="https://github.com/user-attachments/assets/16bd0d91-f10d-45ee-9dc1-8d4895117a07" />
 
-2. <strong>댓글을 통한 동물과 인간유저의 교감</strong><br>
+<h3>2. <strong>댓글을 통한 동물과 인간유저의 교감</strong></h3><br>
 <img width="548" alt="스크린샷 2024-12-19 오후 9 16 49" src="https://github.com/user-attachments/assets/c2d4e0c7-708d-4441-b932-d139a4e50777" />
 
-3. <strong>DM을 통한 유기동물과의 유대감 형성</strong><br>
+<h3>3. <strong>DM을 통한 유기동물과의 유대감 형성</strong></h3><br>
 <img width="548" alt="스크린샷 2024-12-19 오후 9 17 26" src="https://github.com/user-attachments/assets/526a4106-4e06-4dc4-ac11-1932bbc3432e" />
 
-4. <strong>파일 업로드/다운로드</strong><br>
+<h3>4. <strong>파일 업로드/다운로드</strong></h3><br>
 <img width="548" alt="스크린샷 2024-12-19 오후 10 04 55" src="https://github.com/user-attachments/assets/aca89bea-9194-47a6-a0e3-6014714ac477" />
 <img width="548" alt="스크린샷 2024-12-19 오후 10 05 40" src="https://github.com/user-attachments/assets/1f9ea85a-7bf3-44d8-916e-ecac4ed1369a" />
 
